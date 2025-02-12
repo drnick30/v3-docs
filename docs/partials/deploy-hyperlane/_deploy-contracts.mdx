@@ -43,9 +43,14 @@ When to use --advanced:
 	•	Custom Ownership Settings: Lets users assign contract ownership to a specified address instead of using the default.
 	•	Advanced Security Settings: Provides additional parameters to configure the security model according to specific network requirements.
 
-When asked about the ISM type, choose `messageIdMultisigIsm`. In the context of this guide, we will be using a 1/1 multisig, so choose a threshold of `1` and enter the address of your key.
+During initialization, you’ll be prompted to choose:
+	•	ISM Type: Select messageIdMultisigIsm.
+	•	Multisig Threshold: In this guide, we use 1/1 multisig, meaning you should set a threshold of 1 and provide your key’s address.
+	•	Default Hook Type: Choose merkleTreeHook.
 
-When asked about the default hook type and required hook type, choose `merkleTreeHook`.
+This provides greater flexibility for users who need advanced deployment settings.
+
+
 
 ### Dry Run a Core Deployment
 
