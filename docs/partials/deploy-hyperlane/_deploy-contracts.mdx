@@ -33,6 +33,15 @@ To initialize a core config with multisig ISM config, you can define it manually
 ```bash
 hyperlane core init --advanced
 ```
+What does --advanced do?
+
+The --advanced flag enables advanced configuration options for initializing Hyperlane core contracts. Instead of using the default settings, this flag allows for more customization, particularly useful for experienced users who need fine-grained control over their deployment.
+
+When to use --advanced:
+	•	Custom Interchain Security Modules (ISMs): Allows users to specify their own ISM instead of the default one.
+	•	Custom Hooks: Enables defining additional hooks for message processing.
+	•	Custom Ownership Settings: Lets users assign contract ownership to a specified address instead of using the default.
+	•	Advanced Security Settings: Provides additional parameters to configure the security model according to specific network requirements.
 
 When asked about the ISM type, choose `messageIdMultisigIsm`. In the context of this guide, we will be using a 1/1 multisig, so choose a threshold of `1` and enter the address of your key.
 
@@ -84,3 +93,4 @@ Set the `CONFIG_FILES` environment variable to the path of the agent config gene
 ```bash
 export CONFIG_FILES=/full/path/to/configs/agent-config.json
 ```
+Added explanation for --advanced flag in hyperlane core init
